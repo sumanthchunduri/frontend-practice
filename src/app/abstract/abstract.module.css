@@ -27,18 +27,25 @@
 }
 
 .main {
-    display: flex;
-    justify-content: space-evenly;
-    gap: 32px;
+    
     padding-block: 64px;
     padding-inline: 32px;
     background-color: white;
     color: black;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     
 }
-.main div {
+.mainWrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    margin-inline: 32px;
+    flex-wrap: wrap;
+}
+.mainWrapper div {
     max-width: 250px;
+    margin: auto;
 }
 @media (max-width: 670px) {
     .footer {
